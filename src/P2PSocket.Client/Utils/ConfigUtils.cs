@@ -11,7 +11,7 @@ namespace P2PSocket.Client.Utils
     {
         public static bool IsExistConfig()
         {
-            return File.Exists(Global.ConfigFile);
+            return Ini.Init.InitClient();
         }
         public static void LoadFromFile()
         {
