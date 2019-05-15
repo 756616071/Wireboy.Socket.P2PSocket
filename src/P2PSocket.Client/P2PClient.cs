@@ -218,7 +218,7 @@ namespace P2PSocket.Client
                         }
                     });
                 }
-                catch
+                catch 
                 {
                     ConsoleUtils.WriteLine($"Client:端口映射{item.LocalPort}->{item.RemoteAddress}:{item.RemotePort}创建失败.");
                     throw new Exception($"端口映射{item.LocalPort}->{item.RemoteAddress}:{item.RemotePort}创建失败.");
