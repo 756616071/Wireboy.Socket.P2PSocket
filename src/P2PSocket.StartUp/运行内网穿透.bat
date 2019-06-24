@@ -1,0 +1,1 @@
+dotnet P2PSocket.StartUp.dll --console
