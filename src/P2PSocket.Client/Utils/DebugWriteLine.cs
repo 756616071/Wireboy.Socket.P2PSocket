@@ -7,9 +7,12 @@ namespace P2PSocket.Client
 {
     public static class Debug
     {
-        public static void WriteLine(string str)
+        public static void WriteLine(string str,bool  IsShow=false)
         {
-            //ConsoleUtils.WriteLine(str);
+            if (IsShow)
+            {
+                ConsoleUtils.WriteLine(str);
+            }
         }
     }
 }

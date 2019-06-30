@@ -49,7 +49,7 @@ namespace P2PSocket.Core.Utils
         }
         public static void WriteLine(string log, object arg0 = null, object arg1 = null, object arg2 = null)
         {
-            ConsoleUtils.WriteConsole(string.Format(log, arg0, arg1, arg2));
+            WriteConsole(string.Format(log, arg0, arg1, arg2));
         }
     }
 }

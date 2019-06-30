@@ -41,7 +41,7 @@ namespace P2PSocket.Client
                     //如果tcp已关闭，需要关闭相关tcp
                     if (tcpClient.ToClient != null && tcpClient.ToClient.Connected)
                     {
-                        Debug.WriteLine("tcp已关闭");
+                        Debug.WriteLine("tcp已关闭",true);
                         tcpClient.ToClient.Close();
                     }
                     break;

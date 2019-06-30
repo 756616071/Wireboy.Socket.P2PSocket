@@ -27,14 +27,14 @@ namespace P2PSocket.Client.Commands
                 string strTemp = "";
                 intTemp = m_data.ReadInt32();
                 strTemp = m_data.ReadBytes(intTemp).ToStringUnicode();
-                Debug.WriteLine($"身份认证成功,服务名:{strTemp}");
+                Debug.WriteLine($"身份认证成功,服务名:{strTemp}",true);
                 intTemp = m_data.ReadInt32();
                 Global.P2PServerTcp.Token = m_data.ReadBytes(intTemp).ToStringUnicode();
             }
             else
             {
                 //身份验证失败
-                Debug.WriteLine("身份认证失败");
+                Debug.WriteLine("身份认证失败",true);
             }
             return true;
         }
